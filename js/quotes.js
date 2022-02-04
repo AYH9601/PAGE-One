@@ -42,7 +42,7 @@ const quotes = [
     {
     quote: 'If you really want to do something, you will find a way. If you do not, you will find an excuse.',
     author: 'Jim Rohn'
-    },
+    }
     ];
 
 const quote = document.querySelector("#quote span:first-child");
