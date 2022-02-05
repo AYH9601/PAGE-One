@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Noto+Sans+KR:wght@300&family=Orbitron&family=Poppins:wght@200&display=swap");
 * {
   margin: 0px;
   padding: 0px; }
@@ -10,5 +11,78 @@ a {
 
 .hidden {
   display: none; }
+
+body {
+  text-align: center; }
+  body img {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  body #login-form {
+    margin-top: 200px; }
+  body #clock {
+    font: bold 80px/1 "orbitron";
+    color: #fff;
+    letter-spacing: 10px;
+    margin-bottom: 50px; }
+  body #todo-form input[type=text] {
+    width: 400px;
+    height: 50px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid #fff;
+    text-align: center;
+    margin-bottom: 30px; }
+    body #todo-form input[type=text]::placeholder {
+      font: bold 20px/1 "poppins";
+      letter-spacing: 1px;
+      color: #fff; }
+  body #todo-list li {
+    position: relative;
+    width: 500px;
+    height: 50px;
+    background: #fff;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 20px;
+    opacity: 0.8; }
+    body #todo-list li button {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(690%, -50%);
+      width: 30px;
+      height: 30px;
+      font-size: 15px;
+      color: #fff;
+      background-color: #c8c8c8;
+      opacity: 0.8;
+      border: none;
+      border-radius: 15px;
+      transition: 0.25s; }
+      body #todo-list li button:hover {
+        background-color: crimson;
+        transition: 0.25s; }
+  body #weather {
+    margin-bottom: 50px;
+    font: bold 30px/1 "poppins";
+    letter-spacing: 1.5px;
+    color: #fff; }
+    body #weather span {
+      margin-bottom: 30px; }
+  body #quote {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font: bold 18px/1.5 "poppins";
+    letter-spacing: 1.5px;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
