@@ -1,7 +1,11 @@
 const quotes = [
     {
     quote: 'Miracles come from faith. And there is nothing more vain than hoping for a miracle.',
-    author: 'AYS'
+    author: 'Unknown'
+    },
+    {
+    quote: "Worry only delays use.",
+    author: "YI.S"
     },
     {
     quote: 'I never dreamed about success, I worked for it',
