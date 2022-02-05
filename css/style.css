@@ -20,68 +20,121 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    filter: grayscale(0.3); }
   body #login-form {
-    margin-top: 200px; }
-  body #clock {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-bottom: 3px solid crimson; }
+    body #login-form input[type=text] {
+      width: 340px;
+      height: 50px;
+      background: none;
+      border: none; }
+      body #login-form input[type=text]::placeholder {
+        font: bold 20px/1 "poppins";
+        color: #fff;
+        text-align: center;
+        transform: translateX(30px); }
+    body #login-form input[type=submit] {
+      cursor: pointer;
+      background-color: crimson;
+      color: #fff;
+      width: 60px;
+      height: 30px;
+      border: none;
+      transition: 0.25s; }
+      body #login-form input[type=submit]:hover {
+        background: #fff;
+        color: crimson;
+        transition: 0.25s; }
+  body #greeting {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff; }
+    body #greeting::first-letter {
+      color: crimson; }
+  body .inner #clock {
     font: bold 80px/1 "orbitron";
     color: #fff;
     letter-spacing: 10px;
-    margin-bottom: 50px; }
-  body #todo-form input[type=text] {
-    width: 400px;
-    height: 50px;
-    background: none;
-    border: none;
-    border-bottom: 3px solid #fff;
-    text-align: center;
-    margin-bottom: 30px; }
-    body #todo-form input[type=text]::placeholder {
-      font: bold 20px/1 "poppins";
-      letter-spacing: 1px;
-      color: #fff; }
-  body #todo-list li {
-    position: relative;
-    width: 500px;
-    height: 50px;
-    background: #fff;
-    margin-bottom: 20px;
-    text-align: left;
-    padding-left: 20px;
-    opacity: 0.8; }
-    body #todo-list li button {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(690%, -50%);
-      width: 30px;
-      height: 30px;
-      font-size: 15px;
-      color: #fff;
-      background-color: #c8c8c8;
-      opacity: 0.8;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, 0%); }
+  body .inner #todo-form {
+    position: absolute;
+    top: 360px;
+    left: 50%;
+    transform: translate(-50%, 0%); }
+    body .inner #todo-form input[type=text] {
+      width: 400px;
+      height: 50px;
+      background: none;
       border: none;
-      border-radius: 15px;
-      transition: 0.25s; }
-      body #todo-list li button:hover {
-        background-color: crimson;
+      border-bottom: 3px solid crimson;
+      text-align: center;
+      margin-bottom: 30px; }
+      body .inner #todo-form input[type=text]::placeholder {
+        font: bold 20px/1 "poppins";
+        letter-spacing: 1px;
+        color: #fff; }
+  body .inner #todo-list {
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translate(-50%, 0%); }
+    body .inner #todo-list li {
+      position: relative;
+      width: 500px;
+      height: 50px;
+      line-height: 50px;
+      background: #fff;
+      border: none;
+      margin-bottom: 20px;
+      text-align: left;
+      padding-left: 20px;
+      opacity: 0.8;
+      font: bold 18px/50px "poppins";
+      color: #555; }
+      body .inner #todo-list li button {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(690%, -50%);
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        color: #fff;
+        background-color: #c8c8c8;
+        border: none;
+        border-radius: 15px;
         transition: 0.25s; }
-  body #weather {
-    margin-bottom: 50px;
-    font: bold 30px/1 "poppins";
+        body .inner #todo-list li button:hover {
+          background-color: crimson;
+          transition: 0.25s; }
+  body .inner #weather {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: left;
+    font: bold 30px/1.2 "poppins";
     letter-spacing: 1.5px;
     color: #fff; }
-    body #weather span {
-      margin-bottom: 30px; }
-  body #quote {
+    body .inner #weather::first-letter {
+      color: crimson; }
+  body .inner #quote {
     position: absolute;
     bottom: 50px;
     left: 50%;
     transform: translate(-50%, 0%);
     font: bold 18px/1.5 "poppins";
     letter-spacing: 1.5px;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid crimson;
     padding-bottom: 5px;
     color: #fff; }
 
